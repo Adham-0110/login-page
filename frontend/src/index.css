@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Login Page */
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6d5dfc, #a8e063); /* Stylish gradient */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .login-card{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .login-input:focus {
+    border-color: #6d5dfc;
+  }
+  
+  .login-button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.05);
+  }
+
+
+  .signup-button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #dc3e85, #db1054);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    transform: scale(1.05);
+  }
+
+
+  /* SignUp Page */
+  .signup-page {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6d5dfc, #a8e063); /* Stylish gradient */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .signup-card{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .signup-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .signup-input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .signup-input:focus {
+    border-color: #6d5dfc;
+  }
+  
+  .signup-button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #dc3e85, #db1054);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    transform: scale(1.05);
+  }
+
+  
+  /* Success Page */
+  .success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #00c851, #34d399); /* Calm green gradient */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .success-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Failed Page */
+  .failed-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #ff5f6d, #ffc371); /* Warm red gradient */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .failed-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    animation: pulse 2s infinite;
+  }
+
+  .signup_button{
+    width: 30%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #dc3e85, #db1054);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup_button:hover {
+    transform: scale(1.05);
+  }
+  
+
+  /*NotFound Page*/
+
+  .notFound-page{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6d5dfc, #a8e063); /* Stylish gradient */
+    animation: fadeIn 1s ease-in-out; 
+  }
