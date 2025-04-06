@@ -39,7 +39,8 @@ app.post("/signup",function(req,res){
 
     return res.status(201).json({
         message:"User Created Successfully",
-        payload
+        payload,
+        users
     })
     res.send(req.body)
 
