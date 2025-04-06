@@ -16,18 +16,26 @@ function App() {
     setPassword(event.target.value );
   }
 
-  const handleSubmit = async(evt)=>{
-    evt.preventDefault()
-    
-    const resp = await axios.post("http://localhost:8080/login",email)
-    if(resp.status === 200){
-        alert("login Successful")
-        navigate("/success")
-    }else{
-        setErr(resp.data.error.message)
+  const handleSubmit = async (evt) => {
+    evt.preventDefault();
+
+    try {
+        const resp = await axios.post("http://localhost:8080/login", { email, password });
+
+        if (resp.status === 200) {
+            alert("Login Successful");
+            navigate("/success");
+        } else {
+            setErr(resp.data.error.message);
+        }
+
+        console.log("Response", resp);
+    } catch (error) {
+        console.error("Error occurred:", error.response.data.error.message);
+        setErr(error.response.data.error.message);
     }
-    console.log("Response",resp)
 }
+
 
   function handleSignUp() {
     navigate("/signup");
@@ -36,6 +44,7 @@ function App() {
   return (
     <div className="login-page">
       <div className="login-card">
+        <form action="">
         <h1 className="login-title">Welcome Back</h1>
         <input
           onChange={handleemailChange}
@@ -55,6 +64,7 @@ function App() {
         <button onClick={handleSubmit} className="login-button">
           Login
         </button>
+        </form>
       </div>
       <div className="signup_card">
         <h5>Don't Have an Account...</h5>
