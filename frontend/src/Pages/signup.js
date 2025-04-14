@@ -12,7 +12,7 @@ function SignUp() {
     const handleSubmit = async(evt)=>{
         evt.preventDefault()
         console.log("Form Submitted")
-        const resp = await axios.post("http://localhost:8080/signup",{email,password})
+        const resp = await axios.post("https://login-page-ecvo.onrender.com/signup",{email,password})
         if(resp.status === 201){
             alert("SignUp Successful")
             navigate("/")

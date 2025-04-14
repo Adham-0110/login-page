@@ -20,7 +20,7 @@ function App() {
     evt.preventDefault();
 
     try {
-        const resp = await axios.post("http://localhost:8080/login", { email, password });
+        const resp = await axios.post("https://login-page-ecvo.onrender.com/login", { email, password });
 
         if (resp.status === 200) {
             alert("Login Successful");
