@@ -1,4 +1,1 @@
-adham0110
-tVPLuYwXbftrcMZ7
 
-mongodb+srv://adham0110:<db_password>@cluster0.ht9h2ev.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
